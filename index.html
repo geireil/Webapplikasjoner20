@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta name="description" content="Webapps leksjon 2. Todo webapp">
+		<meta name="keywords" content="Todo">
+		<meta name="author" content="Geir Eilertsen">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="stilark.css">
+        <title>Webapps leksjon 2 - Hovedside</title>
+        
+	</head>
+    
+    <body>
+		<header>
+           <h1 id="logo">HIOF</h1>
+           <h1 id="user">User user</h1>
+		</header>
+		<main>
+
+            <div id=todoBtn>
+                <a><span id="bigBold">+ </span> todo</a>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Todotitle</h3>
+                    <p class="cardText">Text about hot chickens...</p>
+                    <div class="btnWrapper">
+                        <div class="completeBtn">complete</div>
+                        <div class="deleteBtn">delete</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Todotitle</h3>
+                    <p class="cardText">Text about hot chickens...</p>
+                    <div class="btnWrapper">
+                        <div class="completeBtn">complete</div>
+                        <div class="deleteBtn">delete</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Todotitle</h3>
+                    <p class="cardText">Text about hot chickens and stuff like vfagrw rwG RW Rwgwfg FEWGWGW that..</p>
+                    <div class="btnWrapper">
+                        <div class="completeBtn">complete</div>
+                        <div class="deleteBtn">delete</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Completed todos</h3>
+
+            <p id="dateFilter">Filter by date</p>
+
+            <ul id="topUl">
+                <li id="topLi"> 
+                    <span class="title">Title</span>
+                    <span class="author">Author</span>
+                    <span class="description">Description</span>
+                    <span class="completedDate">Completed Date</span>
+                </li>
+            </ul>
+            <ul id="list">
+                <li>
+                    <span class="title">Todotitle</span>
+                    <span class="author">Ole Jonny</span>
+                    <span class="description">Text about hot chickens...</span>
+                    <span class="completedDate">22.12.20</span>
+                </li>
+                <li>
+                    <span class="title">Todotitle</span>
+                    <span class="author">Ole Ronny</span>
+                    <span class="description">Text about hot chickens...</span>
+                    <span class="completedDate">22.11.20</span>
+                </li>
+                <li>
+                    <span class="title">Todotitle</span>
+                    <span class="author">Ola Conny</span>
+                    <span class="description">Text about hot chickens...</span>
+                    <span class="completedDate">22.10.20</span>
+                </li>
+            </ul>
+
+
+		</main>
+    </body>
+    
+</html>
