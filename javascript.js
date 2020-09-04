@@ -102,6 +102,8 @@ document.getElementById("form").addEventListener("submit", function(){
 
     showCards();
     modal.style.display = "none";
+    document.getElementById("form").reset();
+    document.getElementById("charactersLeft").innerHTML = "(30 characters left)";
 });
 
 
@@ -222,4 +224,5 @@ document.getElementById("form-description").addEventListener("input",function(){
     nr = 30 - nr;
     document.getElementById("charactersLeft").innerHTML = "(" + nr + " characters left)";
 });
+
 
