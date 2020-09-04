@@ -33,7 +33,7 @@ function showCards() {
     
         var btnWrapperDiv = document.createElement("div");
         btnWrapperDiv.setAttribute("class", "btnWrapper");
-    
+        
         var completeBtnDiv = document.createElement("button");
         completeBtnDiv.setAttribute("class", "completeBtn");
         completeBtnDiv.setAttribute("id", i);
