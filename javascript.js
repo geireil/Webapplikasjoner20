@@ -217,3 +217,9 @@ document.getElementById("dateFilter").addEventListener("change", function(){
     showList();
 });
 
+document.getElementById("form-description").addEventListener("input",function(){
+    let nr = document.getElementById("form-description").value.length;
+    nr = 30 - nr;
+    document.getElementById("charactersLeft").innerHTML = "(" + nr + " characters left)";
+});
+

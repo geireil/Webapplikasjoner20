@@ -236,6 +236,10 @@ ul li span{
 	padding: 4px 4px;
 }
 
+#charactersLeft{
+	color: #919191;
+}
+
 #form-author{
 	margin: 4px 0px 20px 0px;
 	width: 100%;
@@ -256,6 +260,11 @@ ul li span{
 #form-container{
 	margin: auto;
 	width: 80%;
+}
+
+form label{
+	font-size: 12px;
+	font-weight: bold;
 }
 
 
