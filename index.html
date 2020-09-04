@@ -7,9 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<link rel="stylesheet" type="text/css" href="stilark.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <title>Webapps leksjon 2 - Hovedside</title>
-        
+        <script type="text/javascript" src="javascript.js" defer></script>
 	</head>
     
     <body>
@@ -19,40 +19,47 @@
 		</header>
 		<main>
 
-            <div id=todoBtn>
+            <button id=todoBtn>
                 <a><span id="bigBold">+ </span> todo</a>
+            </button>
+
+            <div id="cards">
+                
+            </div>
+ 
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div id="form-header">
+                        <h3 id="form-headertitle">New todo</h3>
+                        <span id ="form-close" class="close">&times;</span>
+                    </div>
+                    
+                    <form id="form" onsubmit="return false">
+                        <div id="form-container">
+                            <label for="form-title">Title</label><br>
+                            <input type="text" id="form-title" name="form-title" value=""><br>
+                            <label for="form-description">Description</label><br>
+                            <input type="text" id="form-description" name="form-description" value=""><br>
+                            <label for="form-author">Author</label><br>
+                            <input type="text" id="form-author" name="form-author" value=""><br><br>
+                            <input id="form-createBtn" type="submit" value="Create">
+                        </div>     
+                    </form> 
+                </div>
+              
             </div>
 
-            <div class="cards">
-                <div class="card">
-                    <h3>Todotitle</h3>
-                    <p class="cardText">Text about hot chickens...</p>
-                    <div class="btnWrapper">
-                        <div class="completeBtn">complete</div>
-                        <div class="deleteBtn">delete</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Todotitle</h3>
-                    <p class="cardText">Text about hot chickens...</p>
-                    <div class="btnWrapper">
-                        <div class="completeBtn">complete</div>
-                        <div class="deleteBtn">delete</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Todotitle</h3>
-                    <p class="cardText">Text about hot chickens and stuff like vfagrw rwG RW Rwgwfg FEWGWGW that..</p>
-                    <div class="btnWrapper">
-                        <div class="completeBtn">complete</div>
-                        <div class="deleteBtn">delete</div>
-                    </div>
-                </div>
-            </div>
 
             <h3>Completed todos</h3>
 
-            <p id="dateFilter">Filter by date</p>
+            <!--<p id="dateFilter">Filter by date</p>-->
+            <div id="filterWrapper">
+                <input type="checkbox" id="dateFilter" name="dateFilter" value="Date">
+                <label for="dateFilter"> Filter by date</label><br>
+            </div>
 
             <ul id="topUl">
                 <li id="topLi"> 
@@ -63,28 +70,11 @@
                 </li>
             </ul>
             <ul id="list">
-                <li>
-                    <span class="title">Todotitle</span>
-                    <span class="author">Ole Jonny</span>
-                    <span class="description">Text about hot chickens...</span>
-                    <span class="completedDate">22.12.20</span>
-                </li>
-                <li>
-                    <span class="title">Todotitle</span>
-                    <span class="author">Ole Ronny</span>
-                    <span class="description">Text about hot chickens...</span>
-                    <span class="completedDate">22.11.20</span>
-                </li>
-                <li>
-                    <span class="title">Todotitle</span>
-                    <span class="author">Ola Conny</span>
-                    <span class="description">Text about hot chickens...</span>
-                    <span class="completedDate">22.10.20</span>
-                </li>
+                
             </ul>
 
 
-		</main>
+        </main>
     </body>
     
 </html>
